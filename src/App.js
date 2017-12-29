@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import NewsList from './components/list'
+import Clock from './components/clock'
 
 class App extends Component {
   render() {
@@ -27,7 +28,11 @@ class App extends Component {
         "url" : "http://www.latimes.com/business/technology/la-fi-0429-tn-marissa-mayer-severance-20160429-story.html"
     }]
     return (
-      <NewsList items = {allData}/>
+      <div className="content">
+          <NewsList items = {allData}/>
+          <Clock interVal = {3}/>
+      </div>
+      
     );
   }
 }
