@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import NewsList from './components/list'
 import Clock from './components/clock'
-
+import EasyFrom from './components/form'
 class App extends Component {
   render() {
       let allData = [{
@@ -31,6 +31,7 @@ class App extends Component {
       <div className="content">
           <NewsList items = {allData}/>
           <Clock interVal = {3}/>
+          <EasyFrom />
       </div>
       
     );
