@@ -1,5 +1,6 @@
 import React,{Component} from 'react'
 import {Link} from 'react-router-dom'
+import './style.css'
 
 export default class Nav extends Component{
     constructor(props){
@@ -11,17 +12,20 @@ export default class Nav extends Component{
             },{
                 text:'clock',
                 path:'/clock'
+            },{
+                text:'learn',
+                path:'/learn'
             }]
         }
     }
 
     render(){
         return(
-            <ul>
+            <ul className='menu'>
                 {
                     (this.state.menu).map((item,index)=>{
                         return (
-                            <li key={index}><Link to={item.path}>{item.text}</Link></li>
+                            <li key={index}><Link to={item.path} className={this.props.activeIndex == index+1?'active':'normal'+' normalize'}>{item.text}</Link></li>
                         )
                     })
                 }

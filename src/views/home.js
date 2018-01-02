@@ -29,7 +29,7 @@ class App extends Component {
     }]
     return (
       <div className="content">
-          <Nav />
+          <Nav activeIndex={1}/>
           <NewsList items = {allData}/>
           <Clock interVal = {3}/>
           <EasyFrom />

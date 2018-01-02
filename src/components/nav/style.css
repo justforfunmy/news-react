@@ -1,0 +1,14 @@
+.menu>li{
+    display: inline-block;
+    margin:0 15px;
+}
+.normalize{
+    text-decoration: none;
+}
+.active{
+    color:lightseagreen
+}
+
+.normal{
+    color:lightcoral
+}

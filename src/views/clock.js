@@ -6,7 +6,7 @@ export default class ClockView extends Component{
     render(){
         return (
             <div className="content">
-                <Nav />
+                <Nav activeIndex={2}/>
                 <Clock interVal = {3}/>
             </div>
         )
