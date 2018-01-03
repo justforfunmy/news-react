@@ -7,7 +7,7 @@ export default class SectionOne extends Component{
     render(){
         return (
             <div>
-                <p>rest/spread属性</p>
+                <h3>rest/spread属性</h3>
                 <p>{this.props.name}</p>
                 <p>{this.props.value}</p>
             </div>
