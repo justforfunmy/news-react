@@ -3,6 +3,7 @@ import Nav from '../components/nav'
 
 import TestView from '../components/testView/one'
 import FormView from '../components/testView/form'
+import LoadshView from '../components/testView/lodash'
 
 export default class LearnView extends Component{
     constructor(props){
@@ -16,6 +17,7 @@ export default class LearnView extends Component{
                 <Nav activeIndex={3}/>
                 <TestView {...data} />
                 <FormView />
+                <LoadshView />
             </div>
         )
     }
